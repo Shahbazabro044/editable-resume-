@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">  <!-- Ensure this points to your CSS file -->
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Editable Resume Builder</h1>
+            <p>Fill in your details and preview your resume instantly.</p>
+        </header>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <h2>Edit Your Information</h2>
+            <form id="resumeForm">
+                <!-- Personal Information -->
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" />
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
+                </div>
+
+                <!-- Education Section -->
+                <div class="form-group">
+                    <label for="education">Education:</label>
+                    <input type="text" id="education" name="education" placeholder="Enter your education details" />
+                </div>
+
+                <!-- Work Experience Section -->
+                <div class="form-group">
+                    <label for="work">Work Experience:</label>
+                    <input type="text" id="work" name="work" placeholder="Enter your work experience" />
+                </div>
+
+                <!-- Skills Section -->
+                <div class="form-group">
+                    <label for="skills">Skills:</label>
+                    <input type="text" id="skills" name="skills" placeholder="Enter your skills" />
+                </div>
+
+                <!-- Save Button -->
+                <div class="form-group">
+                    <button type="button" onclick="updateResume()">Save Changes</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Resume Preview Section -->
+        <div class="resume-section">
+            <h2>Resume Preview</h2>
+            <div id="resumePreview">
+                <p><strong>Name:</strong> <span id="previewName">Shahbaz abro </span></p>
+                <p><strong>Email:</strong> <span id="previewEmail">Shahbaz.Abro@example.com</span></p>
+                <p><strong>Phone:</strong> <span id="previewPhone">03179999999999999999</span></p>
+                <p><strong>Education:</strong> <span id="previewEducation">Bachelor's in Computer Science</span></p>
+                <p><strong>Work Experience:</strong> <span id="previewWork">Software Developer at XYZ Corp.</span></p>
+                <p><strong>Skills:</strong> <span id="previewSkills">JavaScript, HTML, CSS</span></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>  <!-- Ensure this points to your JavaScript file -->
+</body>
+
+</html>
+
